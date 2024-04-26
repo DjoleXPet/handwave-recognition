@@ -3,9 +3,7 @@ This project recognizes hand wave movements in videos using the YoloV8 model, wh
 
 ### Demonstration Video
 
-Click below to watch the demonstration video:
-
-[![Watch the video example](examples/screenshot.png)](examples/output_example.mp4)
+![Watch the video example](examples/output_example.gif)
 
 ## Training the Model
 The model utilizes [Ultralytics YoloV8](https://github.com/ultralytics/ultralytics), originally trained on the [Coco dataset](https://docs.ultralytics.com/datasets/detect/coco/#dataset-structure). Since the Coco dataset lacks 'palm' classes necessary for hand wave recognition, this project employs a portion of the [HaGRID dataset](https://github.com/hukenovs/hagrid). Image and bounding box augmentation was performed using the Albumentations library to enhance training outcomes. The training was executed in a Google Colab environment using a subset of the HaGRID dataset due to computational constraints.
