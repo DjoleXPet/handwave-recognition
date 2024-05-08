@@ -10,6 +10,8 @@ The model utilizes [Ultralytics YoloV8](https://github.com/ultralytics/ultralyti
 
 Before running the provided Jupyter Notebook `yolov8.ipynb`, ensure all dependencies are installed by running `pip install -r requirements.txt` in your environment. This will install necessary packages including Ultralytics YoloV8, Albumentations, and other supporting libraries.
 
+[Link to download trained weights on Google Drive (50Mb)](https://drive.google.com/file/d/1Ocl76s68G9AbiE1FHc01CnDkITYq3yzh/view?usp=sharing) 
+
 ## Model Inference
 The `handwave_recognition.py` script enables local model inferencing. Utilizing Nvidia CUDA technology for acceleration, this script can perform inference in real-time. Modify the input source in `cv2.VideoCapture("your input")` to change the video source. Setting this to `0` will use the web camera, allowing real-time operation. Ensure your environment is set up with all required libraries by installing them from the `requirements.txt` file.
 
