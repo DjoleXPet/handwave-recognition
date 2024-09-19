@@ -8,7 +8,7 @@ import time
 
 torch.cuda.set_device(0) # gpu 0
 
-weights = 'best.pt'
+weights = 'best_colab.pt'
 model = YOLO(weights)
 
 cap = cv2.VideoCapture(0)  # camera 0

@@ -6,11 +6,11 @@ This project recognizes hand wave movements in videos using the YoloV8 model, wh
 ![Watch the video example](examples/output_example.gif)
 
 ## Training the Model
-The model utilizes [Ultralytics YoloV8](https://github.com/ultralytics/ultralytics), originally trained on the [Coco dataset](https://docs.ultralytics.com/datasets/detect/coco/#dataset-structure). Since the Coco dataset lacks 'palm' classes necessary for hand wave recognition, this project employs a portion of the [HaGRID dataset](https://github.com/hukenovs/hagrid). Image and bounding box augmentation was performed using the Albumentations library to enhance training outcomes. The training was executed in a Google Colab environment using a subset of the HaGRID dataset due to computational constraints.
+The model utilizes [Ultralytics YoloV8](https://github.com/ultralytics/ultralytics), originally trained on the [Coco dataset](https://docs.ultralytics.com/datasets/detect/coco/#dataset-structure). Since the Coco dataset lacks 'palm' classes necessary for hand wave recognition, this project employs a portion of the [HaGRID dataset](https://github.com/hukenovs/hagrid). The training was executed in a Google Colab environment using a subset of the HaGRID dataset due to computational constraints.
 
 Before running the provided Jupyter Notebook `yolov8.ipynb`, ensure all dependencies are installed by running `pip install -r requirements.txt` in your environment. This will install necessary packages including Ultralytics YoloV8, Albumentations, and other supporting libraries.
 
-[Link to download trained weights on Google Drive (50Mb)](https://drive.google.com/file/d/1Ocl76s68G9AbiE1FHc01CnDkITYq3yzh/view?usp=sharing) 
+[Link to download trained weights on Google Drive (50Mb)](https://drive.google.com/file/d/108tnG7ClLosCZ84iUQ0G3Xv1kyNspyhK/view?usp=sharing) 
 
 ## Model Inference
 The `handwave_recognition.py` script enables local model inferencing. Utilizing Nvidia CUDA technology for acceleration, this script can perform inference in real-time. Modify the input source in `cv2.VideoCapture("your input")` to change the video source. Setting this to `0` will use the web camera, allowing real-time operation. Ensure your environment is set up with all required libraries by installing them from the `requirements.txt` file.
